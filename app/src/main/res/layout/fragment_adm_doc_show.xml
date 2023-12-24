@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+    <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="Document"
+            android:layout_marginTop="12dp"/>
+
+    <TextView
+            android:id="@+id/tv_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000-00-00 00:00:00"
+            android:layout_gravity="end"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Document"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Document"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="24dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desk"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/tv_desk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desk Document"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="24dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criteria"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/tv_criteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criteria Document"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="24dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criteria Document"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="24dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Information"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Information"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="24dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Document"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"/>
+
+    <ImageView
+            android:id="@+id/iv_file"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_pdf"/>
+
+    <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:text="Delete"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:backgroundTint="#CD0909"
+            android:drawableLeft="@drawable/ic_delete"
+            android:textAllCaps="false"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

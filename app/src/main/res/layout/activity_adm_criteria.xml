@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/blue_700">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="8dp"
+                    app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inp_desk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Desk Criteria"
+                        android:inputType="text"
+                        android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="12dp"
+                    android:gravity="center">
+
+                <Button
+                        android:id="@+id/btn_insert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Insert"
+                        android:layout_marginEnd="36dp"
+                        android:textAllCaps="false"
+                        android:paddingHorizontal="24dp"
+                        android:backgroundTint="@color/blue_500"/>
+
+                <Button
+                        android:id="@+id/btn_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        android:paddingHorizontal="24dp"
+                        android:backgroundTint="@color/blue_500"/>
+
+                <Button
+                        android:id="@+id/btn_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:layout_marginStart="36dp"
+                        android:textAllCaps="false"
+                        android:paddingHorizontal="24dp"
+                        android:backgroundTint="@color/blue_500"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List Item"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:layout_below="@+id/cv_form"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_document"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_title"
+            android:layout_margin="16dp"
+            tools:listitem="@layout/item_base"/>
+
+</RelativeLayout>

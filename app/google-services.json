@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "949279591242",
+    "project_id": "lkps-409017",
+    "storage_bucket": "lkps-409017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949279591242:android:0316225d1231e94a5ccfb3",
+        "android_client_info": {
+          "package_name": "com.project.build_davina"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtERw7CCMWGg-_uyEUrkP18P43D4JiikQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
